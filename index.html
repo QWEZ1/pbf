@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="tabcontent active" id="Pipa">
+        <h1>Пипа</h1>
+        <p>пипапупа</p>
+    </div>
+    <div class="tabcontent" id="Biba">
+        <h1>Биба</h1>
+        <p>бипапупа</p>
+    </div>
+    <div class="tabcontent" id="Fiba">
+        <h1>фиба</h1>
+        <p>бифапупа</p>
+    </div>
+
+    <div id="tablist">
+        <button class="tablink" data-pipka="Pipa" id="defoultOpen">Pipa</button>
+        <button class="tablink" data-pipka="Biba">Biba</button>
+        <button class="tablink" data-pipka="Fiba">Fiba</button>
+    </div>
+        
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .tabcontent {
+            padding: 50px;
+            text-align: center;
+            color: white;
+            display: none;
+        }
+
+        .tabcontent.active {
+            display: block;
+        }
+
+        #Pipa {
+            background-color: aqua;
+        }
+
+        #Biba {
+            background-color: rgb(121, 204, 13);
+        }
+        
+        #Fiba {
+            background-color: rgb(168, 21, 34);
+        }
+
+        .tablink {
+            background-color: gray;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 16px 18px;
+            width: 25%;
+        }
+
+        .tablink:hover {
+            background-color: rgb(216, 208, 208);
+        }
+
+        #tablist {
+            display: flex;
+        }
+
+
+    </style>
+</body>
+</html>
